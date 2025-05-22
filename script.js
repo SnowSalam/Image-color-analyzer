@@ -37,7 +37,7 @@ allColorsButton.addEventListener('click', () => {
 fileInput.addEventListener('change', async (event) => {
     const file = event.target.files[0];
     if (!file) {
-        alert('Ошибка при получении пути файла');
+        alert('Error retrieving file path');
         return;
     }
 
@@ -60,7 +60,7 @@ fileInput.addEventListener('change', async (event) => {
         fillInColorMap(imageData.data);
         
     } catch (error) {
-        alert('Ошибка при загрузке картинки. Попробуйте ещё раз.');
+        alert('Error loading the image. Try again.');
     }
 });
 
