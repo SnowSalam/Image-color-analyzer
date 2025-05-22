@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Color analyzer</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Image color analyzer</h1>
+    </header>
+    <main>
+        <aside>
+            <div class="upload-wrapper">
+                <input type="file" id="input-file" accept="image/*">
+                <label for="input-file" class="input-button">Upload image</label>
+            </div>
+            <div class="h2-wrapper">
+                <h2>Top 10 colors</h2>
+            </div>
+            <div class="encoding-wrapper">
+                <input type="radio" id="encoding1" name="encodingGroup" value="rgb" class="encoding-radio" checked>
+                <label for="encoding1" class="encoding-label">rgb</label>
+
+                <input type="radio" id="encoding2" name="encodingGroup" value="hex" class="encoding-radio">
+                <label for="encoding2" class="encoding-label">hex</label>
+            </div>
+            <div class="found-colors">
+
+            </div>
+            <div class="more-colors-button-wrapper">
+                <button id="more-colors-button">10 more colors</button>
+                <button id="all-colors-button">all colors</button>
+            </div>
+        </aside>
+        <div class="image-container">
+
+        </div>
+    </main>
+
+    <canvas id="canvas" style="display: none;"></canvas>
+    
+</body>
+</html>
